@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form basics</title>
+    </head>
+    <body>
+        <form action="http://example.com/join.php">
+            <p>
+                Username:
+                <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+            <p>
+                Password:
+                <input type="password" name="password" size="15" maxlength="16">
+            </p>
+            <p>How can we improve our service?</p>
+            <textarea name="comments" size="15" cols="20" rows="4" placeholder="Enter your comments..."></textarea>
+            <p>Your favorite music genre</p>
+                <br/>
+                <input type="radio" name="genre" value="rock">
+                Rock
+                <input type="radio" name="genre" value="Pop">
+                Pop
+                <input type="radio" name="genre" value="Jazz">
+                Jazz
+            </p>
+            <p>Music services you use:
+                <br/>
+                <input type="checkbox" name="service" value="iTunes">
+                iTunes
+                <input type="checkbox" name="service" value="Last.fn">
+                Last.fn
+                <input type="checkbox" name="service" value="Spotify">
+                Spotify
+            </p>
+            <p>What type of device do you listen to music on?</p>
+                <select name="devices">
+                    <option value="Phone" selected="selected">
+                        Phone
+                    </option>
+                    <option value="radio">
+                        Radio
+                    </option>
+                    <option value="PC">
+                        Computer
+                    </option>
+                </select>
+                <p>
+                    Upload your song in MP3 format:
+                    <br />
+                    <input type="file" name="user-song" />
+                    <input typ="submit" value="upload" />
+                </p>
+            <p>What do you play music with?</p>
+                <select name="Devices" size="4">
+                    <option value="guitar" selected="selected">
+                        Guitar
+                    </option>
+                    <option value="drums">
+                        Drums
+                    </option>
+                </select>
+            
+
+
+        </form>
+
+    </body>
+</html>
