@@ -4,64 +4,78 @@
         <title>Form basics</title>
     </head>
     <body>
-        <form action="http://example.com/join.php">
-            <p>
-                Username:
-                <input type="text" name="username" size="15" maxlength="30" />
-            </p>
-            <p>
-                Password:
-                <input type="password" name="password" size="15" maxlength="16">
-            </p>
-            <p>How can we improve our service?</p>
-            <textarea name="comments" size="15" cols="20" rows="4" placeholder="Enter your comments..."></textarea>
-            <p>Your favorite music genre</p>
-                <br/>
-                <input type="radio" name="genre" value="rock">
-                Rock
-                <input type="radio" name="genre" value="Pop">
-                Pop
-                <input type="radio" name="genre" value="Jazz">
-                Jazz
-            </p>
-            <p>Music services you use:
-                <br/>
-                <input type="checkbox" name="service" value="iTunes">
-                iTunes
-                <input type="checkbox" name="service" value="Last.fn">
-                Last.fn
-                <input type="checkbox" name="service" value="Spotify">
-                Spotify
-            </p>
-            <p>What type of device do you listen to music on?</p>
-                <select name="devices">
-                    <option value="Phone" selected="selected">
-                        Phone
-                    </option>
-                    <option value="radio">
-                        Radio
-                    </option>
-                    <option value="PC">
-                        Computer
-                    </option>
-                </select>
-                <p>
-                    Upload your song in MP3 format:
-                    <br />
-                    <input type="file" name="user-song" />
-                    <input typ="submit" value="upload" />
-                </p>
-            <p>What do you play music with?</p>
-                <select name="Devices" size="4">
-                    <option value="guitar" selected="selected">
-                        Guitar
-                    </option>
-                    <option value="drums">
-                        Drums
-                    </option>
-                </select>
-            
+        <form action="mailto:natekulish@gmail.com">
+            <h1>Welcome To Computer Science @ MHS</h1>
+            <p>Please complete the following form.</p>
 
+            <hr/>
+
+            <h2>Demographic Information</h2>
+            <p>
+            First Name:<input type="text" name="username" size="15" maxlength="30" required="required"/> Last Name:<input type="text" name="username" size="15" maxlength="30" required="required"/>
+            </p>
+            <p>
+            Username:<input type="text" name="username" size="15" maxlength="30" required="required"/> Password:<input type="password" name="password" size="15" maxlength="16"> 
+            </p>
+            <p>
+            Date Of Birth:
+            <input type="date" name="lastDay" />
+            </p>
+
+            <hr/>
+
+            <h2>Class Information</h2>
+            <p>
+                Course:
+                <select name="Course">
+                    <option value="Exploring CS" selected="selected">
+                        Exploring CS
+                    </option>
+                    <option value="Intro. to Java">
+                        Intro. to Java
+                    </option>
+                    <option value="APCS">
+                        APCS
+                    </option>
+                    <option value="Callaborative">
+                        Collaborative Design
+                    </option>
+                </select>
+            </p>
+            <p>
+                Teacher:
+                <input type="radio" name="teacher" value="Mr. Jadav">
+                Mr. Jadav
+                <input type="radio" name="teacher" value="Mr. Hohn">
+                Mr. Hohn
+            </p>
+            <p>
+                Class Period:<input type="checkbox" name="period" value="1">
+                1<sup>st</sup>
+                <input type="checkbox" name="period" value="2">
+                2<sup>nd</sup>
+                <input type="checkbox" name="period" value="3">
+                3<sup>rd</sup>
+                <input type="checkbox" name="period" value="4">
+                4<sup>th</sup>
+                <input type="checkbox" name="period" value="5">
+                5<sup>th</sup>
+                <input type="checkbox" name="period" value="6">
+                6<sup>th</sup>
+                <input type="checkbox" name="period" value="7">
+                7<sup>th</sup>
+                <input type="checkbox" name="period" value="8">
+                8<sup>th</sup>
+            </p>
+            <p>What are you most excited about for the school year?</p>
+            <p>
+                <textarea name="comments" cols="75" rows="7" placeholder="Enter your comments..."></textarea>
+            </p>
+            <p>
+            <input type="submit" value="Submit">
+            </p>
+            
+                    
 
         </form>
 
